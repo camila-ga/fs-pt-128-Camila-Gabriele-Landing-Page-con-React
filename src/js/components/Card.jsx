@@ -1,21 +1,24 @@
 import React from 'react'
 
-const Card = () => {
-    const Data = [
-        {
-            Image1: "https://images.unsplash.com/photo-1577373482643-5c7ccf8f0ac9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    
-        }
-    ];
+const Card = ({ lugares }) => {
+
     return (
-        <div className="card w-50">
-            <img src={Data.Image} className="card-img-top" alt="..."></img>
+        <div className="col-3 mt-3">
+            <div className="card d-flex justify-content-center" style={{ aspectRatio: "3/4", width: "20rem" }}>
+                <img src={lugares.imagen} className="card-img-top w-100 h-100 object-fit-cover " alt="..."></img>
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <h5 className="card-title">{lugares.lugar}</h5>
+                    <p className="card-text" style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 5,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "auto",
+                    }}
+                    >{lugares.descripcion}</p>
+                    <button className="btn btn-dark w-100" style={{ backgroundColor: '#0c88b2ff' }}>Ver mas</button>
                 </div>
 
+            </div>
         </div>
     )
 }
