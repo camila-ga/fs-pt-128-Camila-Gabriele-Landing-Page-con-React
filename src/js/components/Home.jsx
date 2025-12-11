@@ -3,6 +3,7 @@ import React from 'react';
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -31,29 +32,29 @@ const Home = () => {
             descripcion: "Las Salinas Grandes son un vasto salar ubicado en la región de la Puna, en el límite entre las provincias de Jujuy y Salta, a unos 3.450 metros sobre el nivel del mar (msnm). Son reconocidas como una de las Siete Maravillas Naturales de Argentina.",
             imagen: "https://images.unsplash.com/photo-1654760424207-60efd855cddd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-         {
+        {
             id: 5,
             lugar: "Buenos Aires",
-             descripcion: "La cultura de la Ciudad Autónoma de Buenos Aires (CABA), conocida como 'La Porteña', es una de las más ricas y diversas de América Latina, con una fuerte influencia europea (principalmente italiana y española) mezclada con tradiciones criollas. Por su intensa actividad, a menudo se la llama 'La París del Sur'.",
-             imagen: "https://images.unsplash.com/photo-1725499267114-15531716d101?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            descripcion: "La cultura de la Ciudad Autónoma de Buenos Aires (CABA), conocida como 'La Porteña', es una de las más ricas y diversas de América Latina, con una fuerte influencia europea (principalmente italiana y española) mezclada con tradiciones criollas. Por su intensa actividad, a menudo se la llama 'La París del Sur'.",
+            imagen: "https://images.unsplash.com/photo-1725499267114-15531716d101?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-         {
+        {
             id: 6,
             lugar: "Mendoza ",
-             descripcion: "Capital Mundial del Vino: Es famosa por producir dos tercios de la cosecha argentina, siendo el vino Malbec su variedad insignia. Ofrece numerosas bodegas para degustaciones y visitas.",
-             imagen: "https://images.unsplash.com/photo-1546863340-7e4e97e46f42?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            descripcion: "Capital Mundial del Vino: Es famosa por producir dos tercios de la cosecha argentina, siendo el vino Malbec su variedad insignia. Ofrece numerosas bodegas para degustaciones y visitas.",
+            imagen: "https://images.unsplash.com/photo-1546863340-7e4e97e46f42?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-         {
+        {
             id: 7,
             lugar: "San Carlos de Bariloche ",
             descripcion: "Es la capital turística de la Patagonia argentina y un destino de fama mundial, conocido por sus lagos glaciares, montañas nevadas, bosques y, por supuesto, su delicioso chocolate.",
             imagen: "https://images.unsplash.com/photo-1651640821812-6328be4b6994?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-         {
+        {
             id: 8,
             lugar: "Salta",
-             descripcion: "La provincia de Salta, cuya capital es Salta (Ciudad de Salta), es famosa por su arquitectura colonial bien conservada, su fuerte tradición cultural (folklore) y sus paisajes geológicos espectaculares. Su apodo es 'Salta, La Linda'.",
-             imagen: "https://images.unsplash.com/photo-1600123865667-a55ce543b521?q=80&w=1182&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            descripcion: "La provincia de Salta, cuya capital es Salta (Ciudad de Salta), es famosa por su arquitectura colonial bien conservada, su fuerte tradición cultural (folklore) y sus paisajes geológicos espectaculares. Su apodo es 'Salta, La Linda'.",
+            imagen: "https://images.unsplash.com/photo-1600123865667-a55ce543b521?q=80&w=1182&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
     ];
 
@@ -71,8 +72,7 @@ const Home = () => {
 
                 </div>
             </div>
-
-
+            <Footer />
         </>
     );
 };
