@@ -9,8 +9,11 @@ const Card = ({ lugares }) => {
                 <div className="card-body">
                     <h5 className="card-title">{lugares.lugar}</h5>
                     <p className="card-text" style={{
-                        height: "30%",
-                        overflow: "auto",
+                        maxHeight: "7.5em",
+                        overflowY: "auto",
+                        lineHeight: "1.5em",
+                        textOverflow: "clip",
+                        whiteSpace: "normal",
                     }}
                     >{lugares.descripcion}</p>
                     <button className="btn btn-dark w-100" style={{ backgroundColor: '#0c88b2ff' }}>Ver mas</button>
