@@ -15,7 +15,7 @@ const Card = ({ lugares }) => {
                         textOverflow: "clip",
                         whiteSpace: "normal",
                     }}
-                    >{lugares.descripcion}</p>
+                    >{lugares.descripcion}</p> 
                     <button className="btn btn-dark w-100" style={{ backgroundColor: '#0c88b2ff' }}>Ver mas</button>
                 </div>
 
@@ -25,3 +25,4 @@ const Card = ({ lugares }) => {
 }
 
 export default Card
+// lo de overflow lo vimos con Robert en mentoria
