@@ -3,8 +3,8 @@ import React from 'react'
 const Card = ({ lugares }) => {
 
     return (
-        <div className="col-3 mt-3">
-            <div className="card d-flex justify-content-center" style={{ aspectRatio: "3/4", width: "20rem", height: "auto" }}>
+        <div className="col-12 col-md-6 col-lg-3 mb-4">
+            <div className="card d-flex justify-content-center" style={{ aspectRatio: "3/4", height: "auto" }}>
                 <img src={lugares.imagen} className="card-img-top w-100 h-100 object-fit-cover " alt="..."></img>
                 <div className="card-body">
                     <h5 className="card-title">{lugares.lugar}</h5>

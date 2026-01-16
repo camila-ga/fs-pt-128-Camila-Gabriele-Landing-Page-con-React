@@ -64,7 +64,7 @@ const Home = () => {
             <Navbar />
             <Jumbotron />
             <div className="container">
-                <div className="row">
+                <div className="row g-4">
                     {lugaresArgentina.map(lugares => (
                         <Card key={lugares.id} lugares={lugares} />
                     )
